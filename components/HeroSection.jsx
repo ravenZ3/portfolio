@@ -9,13 +9,14 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 sm:col-span-7 place-self-center">
         <h1 className="text-white font-extrabold text-5xl mb-6 lg:text-7xl" >
-  <span className=" mb-3 block bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% via-purple-500 via-50% to-pink-500">
-    Hello, I'm {""}
-  </span>
+        <span className=" mb-3 block bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% via-purple-500 via-50% to-pink-500">
+  Hello, I`&apos`m {""} 
+</span>
+
   <TypeAnimation
   sequence={[
     // Same substring at the start will only be typed once, initially
-    "Ramjan",
+    'Ramjan',
     1000,
     'Web Developer',
     1000,
