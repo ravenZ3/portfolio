@@ -12,7 +12,7 @@ const HeroSection = () => {
 				<div className="col-span-7 sm:col-span-7 place-self-center">
 					<h1 className="text-white font-extrabold text-5xl mb-6 lg:text-7xl">
 						<span className="mb-3 block bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% via-purple-500 via-50% to-pink-500">
-							Hello, I'm {""}
+							Hello, I&apos;m {""}
 						</span>
 						<TypeAnimation
 							className="font-gitterNeormis"
