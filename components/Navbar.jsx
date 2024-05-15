@@ -42,6 +42,7 @@ const NavBar = () => {
 							setMenu(!menu)
 							console.log(menu)
 						}}
+                        size={30}
 					/>
 					{menu && (
 						<div className="fixed mt-6 left-0 bg-[#121212e2] p-10 h-full w-full ">
