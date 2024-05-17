@@ -38,7 +38,7 @@ const NavBar = () => {
 						size={30}
 					/>
 					<div
-						className={`fixed top-0 left-0 bg-[#121212] p-10 flex justify-center h-full w-full transition-all duration-300 transform ${
+						className={`fixed top-0 left-0 bg-[#121212] p-10 flex justify-center h-full overflow-hidden w-full transition-all duration-300 transform ${
 							menu
 								? "translate-x-0 opacity-100"
 								: "translate-x-full opacity-0"
