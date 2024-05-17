@@ -42,22 +42,21 @@ const NavBar = () => {
 							setMenu(!menu)
 							console.log(menu)
 						}}
-                        size={30}
+						size={30}
 					/>
-					{menu && (
-						<div className="fixed mt-6 left-0 bg-[#121212e2] p-10 h-full w-full ">
-							<ul className="flex flex-col justify-center align-middle gap-10">
-								{navLinks.map((link, index) => (
-									<li key={index}>
-										<NavLink
-											href={link.path}
-											title={link.title}
-										/>
-									</li>
-								))}
-							</ul>
-						</div>
-					)}
+
+					<div className={`fixed mt-6 left-0 bg-[#121212] p-10 h-full w-full transition-all duration-300 transform ${menu ? 'translate-x-0 opacity-100':'translate-x-full opacity-0'} `}>
+						<ul className="flex flex-col justify-center items-center gap-10 ">
+							{navLinks.map((link, index) => (
+								<li key={index}>
+									<NavLink
+										href={link.path}
+										title={link.title}
+									/>
+								</li>
+							))}
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav>
