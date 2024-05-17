@@ -4,3 +4,21 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'JacquardaBastarda';
+    src: url('../public/fonts/JacquardaBastarda9Charted-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'JerseyCharted';
+    src: url('../public/fonts/Jersey10Charted.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .custom-font-size {
+    font-size: 1.5rem !important;
+  }

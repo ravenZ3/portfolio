@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -14,8 +13,10 @@ module.exports = {
       },
       fontFamily: {
         gitterNeormis: ['GitterNeormis', 'sans-serif'],
+        jacquardaBastarda: ['JacquardaBastarda', 'sans-serif'],
+        jerseyCharted: ['JerseyCharted', 'sans-serif'],
       },
     },
   },
   plugins: [],
-}
+};

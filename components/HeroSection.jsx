@@ -2,8 +2,7 @@
 import React from "react"
 import Image from "next/image"
 import { TypeAnimation } from "react-type-animation"
-import profile from "@/public/profile2.jpg"
-import "/styles/fonts.css"
+import profile from "@/public/profile.jpg"
 
 const HeroSection = () => {
 	return (
@@ -30,7 +29,7 @@ const HeroSection = () => {
 							repeat={Infinity}
 						/>
 					</h1>
-					<p className="text-[#c3cacf] text-lg sm:text-left lg:text-xl mb-6 mr-6">
+					<p className="text-[#c3cacf] text-lg sm:text-center lg:text-xl md:text-left lg:text-left mb-6 mr-6">
 						I love bringing my abstractions to reality, turn them
 						into something I can give to the world. I believe that I
 						have so many ideas inside of me that are just waiting

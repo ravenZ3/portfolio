@@ -3,20 +3,13 @@ import React, { useState } from "react"
 import Link from "next/link"
 import NavLink from "./NavLink"
 import { CiMenuFries } from "react-icons/ci"
+import { IoMdClose } from "react-icons/io"
+
 const navLinks = [
-	{
-		title: "About",
-		path: "#about",
-	},
-	{
-		title: "Projects",
-		path: "projects",
-	},
+	{ title: "About", path: "#about" },
+	{ title: "Projects", path: "projects" },
 	{ title: "Blog", path: "#blog" },
-	{
-		title: "Contact",
-		path: "#contact",
-	},
+	{ title: "Contact", path: "#contact" },
 ]
 
 const NavBar = () => {
@@ -44,14 +37,29 @@ const NavBar = () => {
 						}}
 						size={30}
 					/>
+					<div
+						className={`fixed top-0 left-0 bg-[#121212] p-10 flex justify-center h-full w-full transition-all duration-300 transform ${
+							menu
+								? "translate-x-0 opacity-100"
+								: "translate-x-full opacity-0"
+						}`}
+					>
+						<span className="fixed top-10 right-10">
+							<IoMdClose
+								onClick={() => {
+									setMenu(false)
+								}}
+								size={50}
+							/>
+						</span>
 
-					<div className={`fixed mt-6 left-0 bg-[#121212] p-10 h-full w-full transition-all duration-300 transform ${menu ? 'translate-x-0 opacity-100':'translate-x-full opacity-0'} `}>
-						<ul className="flex flex-col justify-center items-center gap-10 ">
+						<ul className="font-jerseyCharted flex-1 flex flex-col justify-center items-center gap-10 custom-font-size">
 							{navLinks.map((link, index) => (
 								<li key={index}>
 									<NavLink
 										href={link.path}
 										title={link.title}
+										className="custom-font-size"
 									/>
 								</li>
 							))}
