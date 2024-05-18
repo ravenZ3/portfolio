@@ -6,9 +6,9 @@ import { CiMenuFries } from "react-icons/ci"
 import { IoMdClose } from "react-icons/io"
 
 const navLinks = [
-	{ title: "About", path: "#about" },
+	{ title: "About", path: "/" },
 	{ title: "Projects", path: "projects" },
-	{ title: "Blog", path: "#blog" },
+	{ title: "Blog", path: "/blog" },
 	{ title: "Contact", path: "#contact" },
 ]
 
